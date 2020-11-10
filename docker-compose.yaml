@@ -4,9 +4,9 @@ services:
     image: shourai/docker-rssh
     container_name: rssh
     environment:
-      - username=username
+      - username=canary
     volumes:
-      - ./data:/home/username
+      - ./data:/home/canary
     ports:
-      - "22:22"
+      - "2222:22"
     restart: always
