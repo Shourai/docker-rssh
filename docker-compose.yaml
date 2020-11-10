@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  rssh:
+    image: shourai/docker-rssh
+    container_name: rssh
+    environment:
+      - username=username
+    volumes:
+      - ./data:/home/username
+    ports:
+      - "22:22"
+    restart: always
