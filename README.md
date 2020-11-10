@@ -15,7 +15,7 @@ docker pull shourai/docker-rssh
   docker run -d \
   -v $(pwd)/data:/home/<username> \
   -e username=<username> -e password=<password> \
-  -p 22:2222 \
+  -p 2222:22 \
   --name rssh shourai/docker-rssh
 ```
 
